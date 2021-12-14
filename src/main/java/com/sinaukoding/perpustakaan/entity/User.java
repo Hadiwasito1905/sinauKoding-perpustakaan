@@ -12,6 +12,9 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 public class User extends BaseEntity<User>{
+
+    private static final long serialVersionUID = 4658142575572162156L;
+
     public enum Role{
         ROLE_USER,
         ROLE_ADMIN
@@ -32,9 +35,6 @@ public class User extends BaseEntity<User>{
 
     @Column(name = "token")
     private String token;
-
-
-
 
 }
 

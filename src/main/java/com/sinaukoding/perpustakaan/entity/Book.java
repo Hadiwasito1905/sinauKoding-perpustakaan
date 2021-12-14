@@ -14,6 +14,10 @@ import javax.persistence.Table;
 @Getter
 @NoArgsConstructor
 public class Book extends BaseEntity<Book>{
+
+
+    private static final long serialVersionUID = 1973078447685027472L;
+
     @Column(name = "title", columnDefinition = "VARCHAR(150)")
     private String title;
 
