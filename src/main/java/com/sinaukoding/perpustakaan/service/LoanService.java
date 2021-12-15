@@ -1,6 +1,5 @@
 package com.sinaukoding.perpustakaan.service;
 
-import com.fasterxml.jackson.databind.ser.Serializers;
 import com.sinaukoding.perpustakaan.dao.BaseDAO;
 import com.sinaukoding.perpustakaan.dao.LoanDAO;
 import com.sinaukoding.perpustakaan.entity.Loan;

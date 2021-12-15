@@ -2,6 +2,7 @@ package com.sinaukoding.perpustakaan.service;
 
 import com.sinaukoding.perpustakaan.dao.BaseDAO;
 import com.sinaukoding.perpustakaan.entity.BaseEntity;
+import com.sinaukoding.perpustakaan.entity.Loan;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
@@ -44,4 +45,5 @@ public abstract class BaseService<T extends BaseEntity<T>> {
         return getDAO().delete(getDAO().findReference(id)) != null;
     }
 
+    protected abstract BaseDAO<Loan> getDao();
 }
